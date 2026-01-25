@@ -1,0 +1,7 @@
+.vscode
+
+/build
+/fonts/unifont
+/fonts/TEST_*
+
+/PebbleFontTool
