@@ -1,8 +1,12 @@
 # Kyanite Bitmap Font 晶石点阵黑
 
-This is a generated bitmap font based on [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic). The font is generated with a narrower width to emulate similar style to the PebbleOS's Gothic font.
+This is a generated bitmap font based on [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic). The font is generated with a narrower width to emulate a similar style to the PebbleOS's Gothic font.
 
 If you want a more blocky (also handcrafted and maybe more readable) font, check out [Tumbled Bitmap Font](https://github.com/TsFreddie/TUMBLED).
+
+本字体是完全从 [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic) 生成而来。生成时使用了稍窄的字符宽度模仿 PebbleOS 的 Gothic 字体风格。
+
+如果你更想要方块一些（并且是手工制作且可能更易读）的字体，推荐了解 [圆石点阵黑](https://github.com/TsFreddie/TUMBLED)。
 
 ## Preview
 
