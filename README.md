@@ -12,9 +12,7 @@ If you want a more blocky (also handcrafted and maybe more readable) font, check
 
 **[Download the latest release 下载最新版本](https://github.com/TsFreddie/KYANITE/releases/latest)**
 
-See the [coverage report 收字覆盖报告](https://github.com/TsFreddie/PebbleFontTool#document-coverage) for the characters a release covers.
-
-想了解每个版本收录了哪些字符，见[收字覆盖报告](https://github.com/TsFreddie/PebbleFontTool#document-coverage)。
+[Coverage Report 收字覆盖报告](https://github.com/TsFreddie/PebbleFontTool#document-coverage)
 
 ### Packs 字体包
 
