@@ -16,6 +16,28 @@ If you want a more blocky (also handcrafted and maybe more readable) font, check
 | KYANITE_18   | ![KYANITE_18 Preview](./images/KYANITE_18.png) | ![KYANITE_18_BOLD Preview](./images/KYANITE_18_BOLD.png) |
 | KYANITE_24   | ![KYANITE_24 Preview](./images/KYANITE_24.png) | ![KYANITE_24_BOLD Preview](./images/KYANITE_24_BOLD.png) |
 | KYANITE_28   | ![KYANITE_28 Preview](./images/KYANITE_28.png) | ![KYANITE_28_BOLD Preview](./images/KYANITE_28_BOLD.png) |
+| KYANITE_36   | ![KYANITE_36 Preview](./images/KYANITE_36.png) | ![KYANITE_36_BOLD Preview](./images/KYANITE_36_BOLD.png) |
+
+## Packs
+
+Each release ships the full packs plus reduced ones. Every pack fills the whole
+resource layout the firmware expects; the reduced packs alias font variants
+that the watch's notifications never use to an existing design of the same
+size, and the pack format stores identical contents only once.
+
+| Pack                   | Watch         | Slots | Aliases                                            |
+| ---------------------- | ------------- | ----- | -------------------------------------------------- |
+| `KYANITE_P2D.pbl`      | Pebble 2 Duo  | 19    | none (KYANITE_14/18/24/28, regular and bold)       |
+| `KYANITE_LITE_P2D.pbl` | Pebble 2 Duo  | 19    | `14_BOLD`→`14`, `24`→`24_BOLD`, `28_BOLD`→`28`     |
+| `KYANITE_PT2.pbl`      | Pebble Time 2 | 21    | none (adds KYANITE_36, regular and bold)           |
+| `KYANITE_LITE_PT2.pbl` | Pebble Time 2 | 21    | `14_BOLD`→`14`, `36_BOLD`→`36`                     |
+| `KYANITE_MINI_PT2.pbl` | Pebble Time 2 | 21    | LITE plus `18_BOLD`→`18`, which only `Medium` uses |
+
+The aliases are chosen around notifications at the watch's default content
+size (Pebble 2 Duo: `Medium`, Pebble Time 2: `Large`). Aliased slots still
+render KYANITE glyphs, but show the referenced design: with
+`KYANITE_MINI_PT2`, switching the watch to `Medium` or `ExtraLarge` makes
+notification headers and titles use the regular weight.
 
 ## Build
 
@@ -30,7 +52,7 @@ cd PebbleFontTool
 bun install
 cd..
 
-# Run the build script
+# Run the build script (needs gettext for the pack metadata)
 bun run ./build.js
 ```
 
