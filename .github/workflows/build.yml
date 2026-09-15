@@ -60,10 +60,17 @@ jobs:
           name: KYANITE_FONT
           path: ./artifacts
       
+      - name: Zip PBF files
+        run: |
+          cd artifacts
+          zip "KYANITE_PBF_${GITHUB_REF_NAME}.zip" *.pbf
+      
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./artifacts/*
+          files: |
+            ./artifacts/*.pbl
+            ./artifacts/*.zip
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
